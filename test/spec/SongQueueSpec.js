@@ -56,7 +56,7 @@ describe('SongQueue', function() {
     });
 
     describe('if there are no songs left in the queue', function() {
-      xit('does nothing', function() {
+      it('does nothing', function() {
         var songQueue = new SongQueue(songData1);
         songQueue.at(0).ended();
         expect(playSpy).to.have.not.been.called;
@@ -65,7 +65,7 @@ describe('SongQueue', function() {
   });
 
   describe('when a song is dequeued', function() {
-    xit('removes the song', function() {
+    it('removes the song', function() {
       removeSpy = sinon.spy(SongQueue.prototype, 'remove');
       var songQueue = new SongQueue(songData1);
       songQueue.at(0).dequeue();
