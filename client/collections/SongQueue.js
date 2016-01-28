@@ -16,8 +16,19 @@ var SongQueue = Songs.extend({
       }
     });
 
-    this.on('dequeue', function(){
-      this.remove(this.at(this));
+    this.on('dequeue', function(song){
+
+      if(song === this.at(0)){
+        this.remove(song);
+
+        if(this.at(0)){
+          this.playFirst();
+        } else {
+          this.trigger('changeCurrentSong');
+        }
+      }
+
+      this.remove(song);
 
     });
   },
