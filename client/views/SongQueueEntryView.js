@@ -7,7 +7,8 @@ var SongQueueEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
-      this.model.play();
+      this.model.add();
+      this.model.render(); //this didn't work to have queued songs appear on dom
     }
   },
 
