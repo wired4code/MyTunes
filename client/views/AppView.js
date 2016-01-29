@@ -14,7 +14,7 @@ var AppView = Backbone.View.extend({
   },
 
   render: function(){
-    return this.$el.html([
+    return this.$el.addClass('container').html([
       this.playerView.$el,
       this.libraryView.$el,
       this.songQueueView.$el

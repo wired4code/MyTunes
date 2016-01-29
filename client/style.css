@@ -1,0 +1,28 @@
+body {
+
+}
+
+.header{
+  width: 500px;
+  margin-left: 100px;
+  text-align: center;
+
+}
+
+.container {
+
+  margin-left: 100px;
+
+}
+
+.category {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+audio {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: silver;
+}

@@ -24,7 +24,7 @@ var SongQueue = Songs.extend({
         if(this.at(0)){
           this.playFirst();
         } else {
-          this.trigger('changeCurrentSong');
+          this.trigger('change:CurrentSong');
         }
       }
 
